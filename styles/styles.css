@@ -1,61 +1,280 @@
-.hero.is-info {
-    background-color: rgb(60,88, 109);
-    color: #fff;
+/* Dark Blue #0b2531 */
+/* Medium Blue #34596F */
+/* Light Blue #74919F */
+/* Grey #A4AAAD */
+/* Dark Orange #D16535 */
+/* Orange #E58946 */
+/* Red #E0563b*/
+
+
+html {
+    background-color:#0b2531;
+    color: white;
+}
+
+body {
+    background-color:#0b2531;
+    color: white;
+    max-width: 1100px;
+    margin: 0px auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: sans-serif, "Raleway";
+    font-size: 100%;
+    font-weight: normal;
+    color: white;
+}
+
+p {
+    font-family: sans-serif, "Roboto";
+    font-size: 100%;
+    font-weight: normal;
+}
+
+/* ********** Alphabetical Below Here ********** */
+
+a {
+    color: #74919F;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #E58946;
+}
+
+a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-item.is-active, .navbar-link:focus, .navbar-link:focus-within, .navbar-link:hover, .navbar-link.is-active {
+    background-color: #34596f;
+    color: #E58946;
+    border-radius: 2px;
+}
+
+a strong {
+    color:#fff;
+}
+
+a strong:hover {
+    color: #E58946;
+}
+
+.backToTop {
+    margin-right: 0%;
+    justify-content: center;
+}
+
+.box {
+    background-color:#74919F;
+    border-radius: 6px;
+    box-shadow: none;
+    display: flex;
+    /* margin: 1rem; */
+    /* padding: 1rem;
+    padding-top: 1rem; */
+    height: 6rem;
+    flex: 1 0 300px;
+    margin: 0 8px;
+    justify-content: center;
+    align-items: center;
+}
+
+.box:not(:last-child), .content:not(:last-child), .notification:not(:last-child), .progress:not(:last-child), .table:not(:last-child), .table-container:not(:last-child), .title:not(:last-child), .subtitle:not(:last-child), .block:not(:last-child), .highlight:not(:last-child), .breadcrumb:not(:last-child), .level:not(:last-child), .message:not(:last-child), .pagination:not(:last-child), .tabs:not(:last-child) {
+    margin-bottom: none;
 }
 
 .button.is-primary {
-    background-color: rgb(217, 140, 83);
+    background-color:#E58946;
     border-color: transparent;
     color: #fff;
+}
+
+.button {
+    background-color: #34596f;
+    border-color: #34596f;
+    color: #fff;
+}
+
+.button:active, .button.is-active, .button:hover, .button.is-hovered {
+    border-color: #34596f;
+    color: #E58946;
+}
+
+.button:focus, .button.is-focused {
+    border-color: #34596f;
+    color: #E58946;
 }
 
 .button.is-primary:hover, .button.is-primary.is-hovered {
-    background-color: rgb(217, 140, 83);
+    background-color:#E58946;
     border-color: transparent;
     color: #fff;
 }
 
-.flex-wrapped {
-    flex-wrap: wrap;
+.buttons {
+    align-items: center;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-shrink: 1;
+    justify-content: flex-start;
 }
 
-.content {
-    color: rgb(12, 61, 120);
-}
-/* The Modal (background) */
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+.card {
+    background-color:#0b2531;
+    box-shadow: none;
+    color: white;
 }
 
-  /* Modal Content/Box */
-.modal-content {
-    background-color: #fefefe;
-    margin: 15% auto; /* 15% from the top and centered */
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
+.card-footer {
+    border-top: none;
 }
 
-  /* The Close Button */
+.card-footer-item {
+    background-color: #34596f;
+    border-color: #34596f;
+    border-radius: 6px;
+    color: #fff;
+    margin: 0.75rem;
+}
+
+.card-footer-item:not(:last-child) {
+    border-right: none;
+    color: #fff;
+}
+
+.checkbox {
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.checkbox:hover {
+    color: #E58946;
+}
+
+  /* The Close Modal Button */
 .close {
-    color: #aaa;
+    color: #0b2531;
     float: right;
     font-size: 28px;
     font-weight: bold;
 }
 
-.close:hover,
-.close:focus {
-    color: black;
+.close:hover, .close:focus {
+    color: #E58946;
     text-decoration: none;
     cursor: pointer;
+}
+
+.content {
+    color: #fff;
+    margin: 0.75rem;
+}
+
+.content h1, .content h2, .content h3, .content h4, .content h5, .content h6 {
+    color: #D16535;
+    font-family: sans-serif, "Raleway";
+}
+
+/* .event-box is text inside the event elements */
+.event-box {
+    font-family: sans-serif, "Roboto";
+    font-size: 100%;
+    font-weight: normal;
+    width: 100%;
+}
+
+.event-box:hover {
+    color: #0b2531;
+}
+
+.flex-wrapped {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.footer {
+    background-color:#0b2531;
+}
+
+.heading {
+    color: white;
+    font-family: sans-serif, "Raleway";
+    display: block;
+    font-size: 1em;
+    text-align: center;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+    text-transform: capitalize;
+}
+
+.hero.is-info {
+    background-color:#34596f;
+    color: rgb(216, 216, 216);
+}
+
+/* The Modal (background) */
+.modal {
+    background-color: rgb(117,117,117); /* Fallback color */
+    background-color: rgba(117, 117, 117, 0.1); /* Black w/ opacity */
+    display: none; /* Hidden by default */
+    height: 100%; /* Full height */
+    left: 0;
+    overflow: auto; /* Enable scroll if needed */
+    position: fixed; /* Stay in place */
+    top: 0;
+    width: 100%; /* Full width */
+    z-index: 1; /* Sit on top */
+}
+
+  /* Modal Content/Box */
+.modal-content {
+    background-color: #74919F;
+    border: none;
+    border-radius: 6px;
+    color: #0b2531;
+    margin: 25% auto; /* 25% from the top and centered */
+    padding: 20px;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+.navbar {
+    background-color:#0b2531;
+    max-width: 1100px;
+    margin: 0px auto;
+}
+
+.navbar-item, .navbar-link {
+    color: white;
+}
+
+.navbar-burger {
+    color: #fff;
+}
+
+.navbar-menu {
+    background-color: #0b2531;
+}
+
+.section {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.section.date-label {
+    padding: 0rem;
+}
+
+strong {
+    color: #fff;
+    font-weight: 700;
+}
+
+.title {
+    color: #D16535;
+}
+
+.title.is-4 {
+    font-size: 1.5rem;
+    color: #D16535;
+    position: relative;
 }
